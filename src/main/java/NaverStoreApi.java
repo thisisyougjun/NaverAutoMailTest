@@ -19,6 +19,8 @@ public class NaverStoreApi {
     private static final String API_URL = "https://api.commerce.naver.com/external/v1/pay-order/seller/product-orders/last-changed-statuses";
 
     public static void getNewOrderList() {
+
+
         try {
             // 현재 시간에서 이틀 전 시간 계산
             ZonedDateTime now = Instant.now().atZone(ZoneOffset.UTC);
