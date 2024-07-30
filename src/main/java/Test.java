@@ -8,7 +8,7 @@ public class Test {
         String type = "SELF";
         Long timestamp = System.currentTimeMillis();
 
-        String token = AuthTokenRequest.getToken(clientId, clientSecret, timestamp);
-        AuthTokenRequest.Connect(clientId, token, timestamp, grantType, type);
+        String token = AuthTokenRequest.getToken(clientId,clientSecret,timestamp);
+        AuthTokenRequest.Connect(clientId,token,timestamp,grantType,type);
     }
 }

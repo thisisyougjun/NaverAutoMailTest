@@ -4,7 +4,6 @@ import org.mindrot.jbcrypt.BCrypt;
 import javax.net.ssl.HttpsURLConnection;
 import java.io.*;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
@@ -101,4 +100,3 @@ public class AuthTokenRequest {
         return URLEncoder.encode(value, StandardCharsets.UTF_8);
     }
 }
-
