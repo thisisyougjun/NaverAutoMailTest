@@ -16,7 +16,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class NaverStoreApi {
     private static final String API_KEY = "24e4Sy6UmsLAh1212LHHe6";
-    private static final String API_URL = "https://api.commerce.naver.com/external/v1/pay-order/seller/product-orders/last-changed-statuses";
+    private static final String API_URL = "https://api.commerce.naver.com/external/v1/pay-order/seller/orders/{orderId}/product-order-ids";
 
     public static void getNewOrderList() {
 
