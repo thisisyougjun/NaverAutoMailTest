@@ -15,7 +15,6 @@ import java.util.stream.Collectors;
 
 public class AuthTokenRequest {
 
-    static String access_token ;
 
     public static String getToken(String clientId, String clientSecret, Long timestamp) throws IOException {
 
@@ -33,9 +32,6 @@ public class AuthTokenRequest {
         data.put("timestamp", String.valueOf(timestamp));
         data.put("grant_type", grantType);
         data.put("type", type);
-        String access_token;
-
-
 
 //        for (Map.Entry<String, String> entry : data.entrySet()) {
 //            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
@@ -80,7 +76,6 @@ public class AuthTokenRequest {
             StringBuilder response = new StringBuilder();
             while ((inputLine = in.readLine()) != null) {
                 response.append(inputLine);
-
             }
             in.close();
 
@@ -98,6 +93,7 @@ public class AuthTokenRequest {
 
     private static String parseAccessToken(String responseBody) {
         JSONObject json = new JSONObject(responseBody);
+        Test.access_token =json.getString("access_token");
         return json.getString("access_token");
     }
 
