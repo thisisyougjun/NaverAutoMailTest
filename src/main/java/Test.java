@@ -28,7 +28,7 @@ public class Test {
         Request request = new Request.Builder()
                 .url("https://api.commerce.naver.com/external/v1/pay-order/seller/orders/2024073067966281/product-order-ids")
                 .get()
-                .addHeader("Authorization", "Bearer " + access_token)
+                .addHeader("Authorization:Bearer " + access_token)
                 .build();
 
         //Response response = client.newCall(request).execute();
